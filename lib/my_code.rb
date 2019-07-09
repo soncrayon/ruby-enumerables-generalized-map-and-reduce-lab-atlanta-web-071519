@@ -17,7 +17,7 @@ if source_array.include?(true || false)
       boolean = yield !!boolean, !!source_array[i]
       i += 1 
     end 
-    return boolean
+    return !!boolean
 else
   if starting_point[0]
     source_array = source_array.push(starting_point[0])
