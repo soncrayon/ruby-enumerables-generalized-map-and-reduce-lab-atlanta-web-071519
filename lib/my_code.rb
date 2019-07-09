@@ -14,7 +14,7 @@ if source_array.include?(true || false)
     boolean = []   
     i = 0 
     while source_array[i] do 
-      boolean = yield boolean, source_array[i]
+      boolean = yield boolean[0], source_array[i]
       i += 1 
     end 
     return boolean
