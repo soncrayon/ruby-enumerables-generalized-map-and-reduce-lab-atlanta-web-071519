@@ -11,7 +11,7 @@ end
 
 def reduce(source_array, *starting_point)
 if source_array.include?(true || false) 
-    boolean = ''  
+    boolean = true  
     i = 0 
     while source_array[i] do 
       boolean = yield boolean, !!source_array[i]
