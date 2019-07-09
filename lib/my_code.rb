@@ -10,6 +10,9 @@ def map(source_array)
 end 
 
 def reduce(source_array, *starting_point)
+  if
+    
+else
   if starting_point[0]
     source_array = source_array.push(starting_point[0])
   end 
@@ -20,6 +23,7 @@ def reduce(source_array, *starting_point)
     i += 1 
   end 
   return array_sum 
+end 
 end
 
 #def reduce(source_array, *starting_point)
