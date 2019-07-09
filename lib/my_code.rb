@@ -10,7 +10,8 @@ def map(source_array)
 end 
 
 def reduce(source_array, *starting_point)
-if source_array.include?(true) || source_array.include?(false) || source_array[0] = false 
+if (source_array.include?(true) || source_array.include?(false) ||
+source_array[0] == false) 
     boolean = !!source_array[0]  
     i = 0 
     while (i < source_array.length) do 
