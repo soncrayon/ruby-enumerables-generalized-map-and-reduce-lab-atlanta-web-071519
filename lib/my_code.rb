@@ -10,9 +10,14 @@ def map(source_array)
 end 
 
 def reduce(source_array, *starting_point)
-  if
+if
     boolean = nil 
     i = 0 
+    while source_array[i] do 
+      boolean = yield boolean, source_array[i]
+      i += 1 
+    end 
+    return boolean
 else
   if starting_point[0]
     source_array = source_array.push(starting_point[0])
