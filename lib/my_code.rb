@@ -24,7 +24,7 @@ else
   end 
   array_sum = 0 
   i = 0 
-  while source_array[i] do 
+  while (i < source_array.length) do 
     array_sum = yield array_sum, source_array[i]
     i += 1 
   end 
