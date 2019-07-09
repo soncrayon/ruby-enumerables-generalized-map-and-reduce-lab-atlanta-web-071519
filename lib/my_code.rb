@@ -10,7 +10,7 @@ def map(source_array)
 end 
 
 def reduce(source_array, *starting_point)
-if (source_array.include?(true && false) || source_array[0] = false) 
+if source_array.include?(true) || source_array.include?(false) || source_array[0] = false 
     boolean = !!source_array[0]  
     i = 0 
     while (i < source_array.length) do 
@@ -24,13 +24,14 @@ else
   end 
   array_sum = 0 
   i = 0 
-  while (i < source_array.length) do 
+  while source_array[i] do 
     array_sum = yield array_sum, source_array[i]
     i += 1 
   end 
   return array_sum 
 end 
 end
+
 
 
 #def reduce(source_array, *starting_point)
